@@ -26,6 +26,7 @@ let aggregations:any = {
                 ORDER_ID: { $first: "$ORDER_ID" },
                 AMOUNT: { $first: "$AMOUNT" },
                 STATUS: { $first: "$STATUS" },
+                DATE: { $first: "$DATE" },
                 // USER_ID: { $first: "$USER_ID" },
                 ITEMS: {
                     $push: {
